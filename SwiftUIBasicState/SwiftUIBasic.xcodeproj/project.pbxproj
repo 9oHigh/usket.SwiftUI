@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA7CB4426CB9F3700C28963 /* MyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7CB4326CB9F3700C28963 /* MyVStackView.swift */; };
+		4CA7CB4626CBA5D400C28963 /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7CB4526CBA5D400C28963 /* MyTextView.swift */; };
 		4CAC501426CA848600936F4A /* SwiftUIBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC501326CA848600936F4A /* SwiftUIBasicApp.swift */; };
 		4CAC501626CA848600936F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC501526CA848600936F4A /* ContentView.swift */; };
 		4CAC501826CA848800936F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAC501726CA848800936F4A /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CA7CB4326CB9F3700C28963 /* MyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStackView.swift; sourceTree = "<group>"; };
+		4CA7CB4526CBA5D400C28963 /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 		4CAC501026CA848600936F4A /* SwiftUIBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAC501326CA848600936F4A /* SwiftUIBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBasicApp.swift; sourceTree = "<group>"; };
 		4CAC501526CA848600936F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				4CAC501726CA848800936F4A /* Assets.xcassets */,
 				4CAC501C26CA848800936F4A /* Info.plist */,
 				4CAC501926CA848800936F4A /* Preview Content */,
+				4CA7CB4326CB9F3700C28963 /* MyVStackView.swift */,
+				4CA7CB4526CBA5D400C28963 /* MyTextView.swift */,
 			);
 			path = SwiftUIBasic;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAC501626CA848600936F4A /* ContentView.swift in Sources */,
+				4CA7CB4626CBA5D400C28963 /* MyTextView.swift in Sources */,
 				4CAC501426CA848600936F4A /* SwiftUIBasicApp.swift in Sources */,
+				4CA7CB4426CB9F3700C28963 /* MyVStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C32044826D388FF003C806B /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C32044726D388FF003C806B /* MyList.swift */; };
 		4C8EC51126CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC51026CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift */; };
 		4C8EC51326CD187B00B6C6BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EC51226CD187B00B6C6BB /* ContentView.swift */; };
 		4C8EC51526CD187D00B6C6BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8EC51426CD187D00B6C6BB /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C32044726D388FF003C806B /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		4C8EC50D26CD187B00B6C6BB /* SwiftUI-ScrollPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ScrollPage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8EC51026CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ScrollPageApp.swift; sourceTree = "<group>"; };
 		4C8EC51226CD187B00B6C6BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				4C8EC51026CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift */,
 				4C8EC51226CD187B00B6C6BB /* ContentView.swift */,
+				4C32044726D388FF003C806B /* MyList.swift */,
 				4C8EC51426CD187D00B6C6BB /* Assets.xcassets */,
 				4C8EC51926CD187D00B6C6BB /* Info.plist */,
 				4C8EC51626CD187D00B6C6BB /* Preview Content */,
@@ -148,6 +151,7 @@
 				4C8EC51326CD187B00B6C6BB /* ContentView.swift in Sources */,
 				4C8EC51126CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift in Sources */,
 				4C8EC52226CD300A00B6C6BB /* MySubCardView.swift in Sources */,
+				4C32044826D388FF003C806B /* MyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

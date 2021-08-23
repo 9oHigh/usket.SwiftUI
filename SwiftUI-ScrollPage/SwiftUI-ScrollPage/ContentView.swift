@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isNavigationBarHidden : Bool = false
+    
+    @State var isNavigationBarHidden : Bool = true
     
     var body: some View {
         //리스트를 가지고 있는 뷰를 보여주기 위해서 Navigation 뷰로 전체를 감싸야한다.
@@ -20,15 +21,17 @@ struct ContentView: View {
                     HStack{
                         // 목록 아이콘을 통해서 리스트뷰로 이동하므로
                         // 링크는 아이콘으로 설정
-                        NavigationLink(destination: MyList(isNavigationBarHidden: self.$isNavigationBarHidden)){
-                        Image(systemName: "line.horizontal.3")
-                            .font(.largeTitle)
-                            .foregroundColor(.black)
+                        NavigationLink(destination: MyList()){
+                            Image(systemName: "line.horizontal.3")
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
                         }
                         Spacer()
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
-                        
+                        NavigationLink(destination: MyNavigationView()){
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
+                        }
                     }
                     .padding(20)
                     
@@ -60,12 +63,11 @@ struct ContentView: View {
                             .foregroundColor(.white)
                     )
                     .padding(.trailing,10)
-                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .shadow(radius: 10)
                 
             }//ZStack
             // 상단의 navigationBar 부분의 공간이 낭비되므로 Hidden 메소드로
             // 없앨 수 있다. @State를 활용하여 해당 값을 감지하고 다시그리는 방식
-            .navigationBarTitle("메모장")
             .navigationBarHidden(self.isNavigationBarHidden)
             .onAppear{
                 self.isNavigationBarHidden = true

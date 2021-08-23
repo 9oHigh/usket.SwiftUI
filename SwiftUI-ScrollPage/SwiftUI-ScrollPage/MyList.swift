@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MyList: View{
-    
-    @Binding var isNavigationBarHidden : Bool
-    init(isNavigationBarHidden : Binding<Bool> = .constant(false)) {
-        _isNavigationBarHidden = isNavigationBarHidden
-    }
+// Xcode 12 부터는 필요없어진 기능
+//    @Binding var isNavigationBarHidden : Bool
+//    init(isNavigationBarHidden : Binding<Bool> = .constant(false)) {
+//        _isNavigationBarHidden = isNavigationBarHidden
+//    }
     
     var body: some View{
         //List - 리스트 형식으로 VStack과는 다른 뷰임을 알아두자.
@@ -43,6 +43,8 @@ struct MyList: View{
         //리스트의 스타일 종류 알아두기
         .listStyle(GroupedListStyle())
         .navigationTitle("Things")
+        
+// Xcode 12 부터는 필요없어진 기능
 //        .navigationBarHidden(self.isNavigationBarHidden)
 //        .onAppear{
 //            self.isNavigationBarHidden = false

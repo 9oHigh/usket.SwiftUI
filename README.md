@@ -34,5 +34,9 @@
 
 ###### 8. SwiftUI-ScrollPage ( List )
 - List : 리스트 형식의 뷰를 만들 수 있다.
-- Section : List, Picker, Form 에서 구역을 나눌 수 있다. 
+- Section : List, Picker, Form 에서 구역을 나눌 수 있다.
+
+###### 9. SwiftUI-ScrollPage ( NavigationBar )
+- navigationBarItems + navigationLink를 이용하면 이전 뷰로 돌아오는 기능에 충돌이 발생하고 rootView(content View)로 돌아오게 된다. 따라서, 수정 이전까지는 nav Bar를 따로 만들어 Link를 줘야한다.
+- 오류 출처 : https://developer.apple.com/forums/thread/124757?page=3 
 

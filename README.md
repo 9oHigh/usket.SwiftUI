@@ -40,7 +40,14 @@
 - navigationBarItems + navigationLink를 이용하면 이전 뷰로 돌아오는 기능에 충돌이 발생하고 rootView(content View)로 돌아오게 된다. 따라서, 수정 이전까지는 nav Bar를 따로 만들어 Link를 줘야한다.
 - 오류 출처 : https://developer.apple.com/forums/thread/124757?page=3 
 
-###### 9. SwiftUI-GeometryReader 
+###### 10. SwiftUI-GeometryReader 
 - 고정된 값을 가지는 것이 아닌 화변의 비율에 맞게 조정할 수 있게 해주는 함수다.
 - geometryReader{ (변수) in (code)} 여기서 변수는 내부에서 지속적으로 사용된다.
-- enum : 열거형으로 SwiftUI에서는 그 자체로 고유값을 가지므로 값을 줄 필요는 없다.
+- Xcode 12 부터는 GR을 사용할 때 디폴트 값이 정해지지 않게 되어 해당 뷰 아래에 속성 메소드를 다음과 같이 붙여야 한다. ( .frame(width: display.size.width, height: display.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) )
+- enum : 열거형으로 SwiftUI에서는 그 자체로 고유값을 가지므로 값을 줄 필요는 없다. 이를 이용하여 각각의 버튼의 클릭을 활용 할 수도 있다.
+
+###### 11. SwiftUI-ScrollView( TabView / Custom TabView)
+- 하단의 탭을 만들 수 있는 뷰이다.
+- .tabItem을 이용하여 Icon을 사용하거나 변경이 가능하고 .tag(N)는 식별자(구분) 역할을 할 수 있게 해준다.
+- 함수 + enum을 활용해서 각각의 뷰를 변경할 수 있다.
+- 탭뷰의 아이콘을 scaleEffect( )를 이용해 클릭시 사이즈의 변화를 줄 수 있다.

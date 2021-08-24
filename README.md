@@ -40,3 +40,7 @@
 - navigationBarItems + navigationLink를 이용하면 이전 뷰로 돌아오는 기능에 충돌이 발생하고 rootView(content View)로 돌아오게 된다. 따라서, 수정 이전까지는 nav Bar를 따로 만들어 Link를 줘야한다.
 - 오류 출처 : https://developer.apple.com/forums/thread/124757?page=3 
 
+###### 9. SwiftUI-GeometryReader 
+- 고정된 값을 가지는 것이 아닌 화변의 비율에 맞게 조정할 수 있게 해주는 함수다.
+- geometryReader{ (변수) in (code)} 여기서 변수는 내부에서 지속적으로 사용된다.
+- enum : 열거형으로 SwiftUI에서는 그 자체로 고유값을 가지므로 값을 줄 필요는 없다.

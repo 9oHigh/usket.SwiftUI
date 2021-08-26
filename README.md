@@ -52,7 +52,12 @@
 - 함수 + enum을 활용해서 각각의 뷰를 변경할 수 있다.
 - 탭뷰의 아이콘을 scaleEffect( )를 이용해 클릭시 사이즈의 변화를 줄 수 있다.
 
-###### 11. SwiftUI-QRScanner
+###### 12. SwiftUI-QRScanner
 - github에 있는 QRCode Scanner 오픈소스를 활용하여 QRCode Scanner를 만들어보는 프로젝트
 - 시뮬레이터로는 카메라 기능을 활성화 할 수 없어 실제 아이폰을 활용하여 확인 할 수 있다.
 - 참고 : https://github.com/twostraws/CodeScanner
+
+###### 13. SwiftUI-ButtonStyle
+- 버튼 스타일의 뷰를 만들어두면 색, 효과 등을 매개변수를 통해서 컨트롤 할 수 있다.
+- 어플리케이션을 만들기에 앞서 통일성 있는 버튼 스타일을 가져갈 때 유용하다.
+- makeBody 함수를 만들고 매개변수는 Configuration으로 설정 -> 반환은 View

@@ -51,3 +51,8 @@
 - .tabItem을 이용하여 Icon을 사용하거나 변경이 가능하고 .tag(N)는 식별자(구분) 역할을 할 수 있게 해준다.
 - 함수 + enum을 활용해서 각각의 뷰를 변경할 수 있다.
 - 탭뷰의 아이콘을 scaleEffect( )를 이용해 클릭시 사이즈의 변화를 줄 수 있다.
+
+###### 11. SwiftUI-QRScanner
+- github에 있는 QRCode Scanner 오픈소스를 활용하여 QRCode Scanner를 만들어보는 프로젝트
+- 시뮬레이터로는 카메라 기능을 활성화 할 수 없어 실제 아이폰을 활용하여 확인 할 수 있다.
+- 참고 : https://github.com/twostraws/CodeScanner

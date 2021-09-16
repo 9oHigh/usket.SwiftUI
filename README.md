@@ -80,3 +80,6 @@
 - openURL을 이용해 받아온 id의 값을 비교하고, State 변수를 이용하여 해당 탭 / 목록으로 접근이 가능하게 만들 수 있다. 
 - 참고 : Deeplink는 특정 페이지에 도달하게 하는 링크를 말한다.
 
+###### 18. SwiftUI - Menu
+- Toolbar에서 toolbarItem의 원하는 위치를 조정하고 내용을 붙일 수 있다. 
+- 멀티 트레일링 클로저(Multi Trailing Closure) : 소괄호없이 중괄호를 이용하여 클로저 형태로 연달아 적는 방식을 말한다. 

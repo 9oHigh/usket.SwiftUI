@@ -1,8 +1,6 @@
-# iOS App Development using SwfitUI🧑🏻‍💻
+# SwfitUI🧑🏻‍💻
 ##### 👉 Learn the basics of app development using SwiftUI
-#
 ##### 👉 The curriculum will be conducted in the order of uploaded videos of YouTube by  "개발하는 정대리"
-#
 ###### 1. SwiftUIBasicState - @State
 - 구조체 내부에서 변경이 불가능하기 때문에 @State 속성을 이용하여 특정한 값을 저장하는데 사용한다.
 - 재할당하여 값을 바꿀 수 없다.

@@ -14,9 +14,9 @@ struct ContentView: View {
     
     var body: some View {
         // HStack과 VStack이 존재한다.
-        NavigationView{
-            VStack{
-                HStack{
+        return NavigationView {
+            VStack {
+                HStack {
                     //MyStackView.swfit 파일로 부터 구조체를 가져옴.
                     //하나의 파일에 구조체를 저장하고 사용하면 콘텐트뷰가 깔끔하게 정되 될 것 같다.
                     MyVStackView()
@@ -40,13 +40,14 @@ struct ContentView: View {
                 NavigationLink(destination: MyTextView()){
                     Text("네비게이션")
                         .font(.system(size: 40))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .padding()
                         .background(Color.orange)
                         .foregroundColor(Color.white)
                         .cornerRadius(30)
-                }.padding(.top,50)
+                }.padding(.top, 50)
             }
+            .navigationTitle("메뉴")
         }//NavigationView
     }
 }

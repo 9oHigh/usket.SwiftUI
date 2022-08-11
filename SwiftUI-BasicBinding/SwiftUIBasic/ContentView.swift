@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    //@State - 값의 변화를 확인 -> 뷰에 적용시킴
+
     @State
     private var isActivated: Bool = false
     
@@ -42,7 +42,7 @@ struct ContentView: View {
                 NavigationLink(destination: MyTextView(isActivated: $isActivated)){
                     Text("네비게이션")
                         .font(.system(size: 40))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .padding()
                         .background(Color.orange)
                         .foregroundColor(Color.white)

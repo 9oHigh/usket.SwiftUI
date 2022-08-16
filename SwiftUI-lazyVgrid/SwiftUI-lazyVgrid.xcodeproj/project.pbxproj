@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C11A93228AB55D000F13DEF /* SegmentLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11A93128AB55D000F13DEF /* SegmentLayoutView.swift */; };
 		4C0E1CBA26F437B10095FBC2 /* SwiftUI_lazyVgridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E1CB926F437B10095FBC2 /* SwiftUI_lazyVgridApp.swift */; };
 		4C0E1CBC26F437B10095FBC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E1CBB26F437B10095FBC2 /* ContentView.swift */; };
 		4C0E1CBE26F437B50095FBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0E1CBD26F437B50095FBC2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C11A93128AB55D000F13DEF /* SegmentLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentLayoutView.swift; sourceTree = "<group>"; };
 		4C0E1CB626F437B10095FBC2 /* SwiftUI-lazyVgrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-lazyVgrid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0E1CB926F437B10095FBC2 /* SwiftUI_lazyVgridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_lazyVgridApp.swift; sourceTree = "<group>"; };
 		4C0E1CBB26F437B10095FBC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4C0E1CB926F437B10095FBC2 /* SwiftUI_lazyVgridApp.swift */,
+				3C11A93128AB55D000F13DEF /* SegmentLayoutView.swift */,
 				4C0E1CBB26F437B10095FBC2 /* ContentView.swift */,
 				4C0E1CBD26F437B50095FBC2 /* Assets.xcassets */,
 				4C0E1CC226F437B50095FBC2 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C11A93228AB55D000F13DEF /* SegmentLayoutView.swift in Sources */,
 				4C0E1CBC26F437B10095FBC2 /* ContentView.swift in Sources */,
 				4C0E1CBA26F437B10095FBC2 /* SwiftUI_lazyVgridApp.swift in Sources */,
 			);

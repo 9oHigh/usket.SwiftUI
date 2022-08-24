@@ -16,7 +16,7 @@ struct MyList: View{
     
     var body: some View{
         //List - 리스트 형식으로 VStack과는 다른 뷰임을 알아두자.
-        List{
+        List {
             //Section - 말 그대로 일정한 크기 안의 구역에서 헤더와 푸터를 가지고 각각의 구조체들의 값을 가지고 있을 수 있다.
             Section(
                 header: Text("오늘 할 일").font(.headline).foregroundColor(.black),
@@ -38,7 +38,6 @@ struct MyList: View{
                 }
             }
             .listRowInsets(EdgeInsets.init(top: 5 , leading: 10, bottom: 5, trailing: 10))
-            
         }
         //리스트의 스타일 종류 알아두기
         .listStyle(GroupedListStyle())

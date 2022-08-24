@@ -12,15 +12,15 @@ struct MyBackgroundColor : View {
     var color : Color
     
     var body: some View{
-    
+        
         ZStack{
-          color
-//            .edgesIgnoringSafeArea(.all)
+            color
             
-          Text(title)
-            .font(.largeTitle)
-            .fontWeight(.black)
-            .foregroundColor(.white)
-        }.animation(.none)
+            Text(title)
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .foregroundColor(.white)
+            
+        }.animation(.easeInOut)
     }
 }

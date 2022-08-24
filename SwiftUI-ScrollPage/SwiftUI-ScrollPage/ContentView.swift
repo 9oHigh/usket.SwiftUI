@@ -35,7 +35,7 @@ struct ContentView: View {
                     }
                     .padding(20)
                     
-                    Text("경후의 To do list")
+                    Text("나님의 To do list")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .padding(.horizontal,20)

@@ -51,6 +51,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB9F6A128B342D50056BF67 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4C32045226D3D0C4003C806B /* MyImageView.swift */,
+				4C32044926D39B28003C806B /* MyNavigationView.swift */,
+				4C32045026D3B1C3003C806B /* MySettingView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		3CB9F6A228B343A40056BF67 /* SideView */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EC52126CD300A00B6C6BB /* MySubCardView.swift */,
+				4C8EC51F26CD27A800B6C6BB /* MyCardView.swift */,
+				4C32044726D388FF003C806B /* MyList.swift */,
+			);
+			path = SideView;
+			sourceTree = "<group>";
+		};
 		4C8EC50426CD187B00B6C6BB = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +90,16 @@
 		4C8EC50F26CD187B00B6C6BB /* SwiftUI-ScrollPage */ = {
 			isa = PBXGroup;
 			children = (
+				3CB9F6A228B343A40056BF67 /* SideView */,
+				3CB9F6A128B342D50056BF67 /* HomeView */,
 				4C8EC51026CD187B00B6C6BB /* SwiftUI_ScrollPageApp.swift */,
 				4C8EC51226CD187B00B6C6BB /* ContentView.swift */,
 				4C3204B126D4EDEA003C806B /* MyTabView.swift */,
 				4C3204B526D5040C003C806B /* MyCustomTabView.swift */,
 				4C3204B326D4FF69003C806B /* MyBackgroundColor.swift */,
-				4C32044926D39B28003C806B /* MyNavigationView.swift */,
-				4C32045226D3D0C4003C806B /* MyImageView.swift */,
-				4C32045026D3B1C3003C806B /* MySettingView.swift */,
-				4C32044726D388FF003C806B /* MyList.swift */,
 				4C8EC51426CD187D00B6C6BB /* Assets.xcassets */,
 				4C8EC51926CD187D00B6C6BB /* Info.plist */,
 				4C8EC51626CD187D00B6C6BB /* Preview Content */,
-				4C8EC51F26CD27A800B6C6BB /* MyCardView.swift */,
-				4C8EC52126CD300A00B6C6BB /* MySubCardView.swift */,
 			);
 			path = "SwiftUI-ScrollPage";
 			sourceTree = "<group>";
@@ -305,7 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ScrollPage/Preview Content\"";
-				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				DEVELOPMENT_TEAM = XN968856C5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-ScrollPage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -327,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ScrollPage/Preview Content\"";
-				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				DEVELOPMENT_TEAM = XN968856C5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-ScrollPage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

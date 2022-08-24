@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TabIndex {
-    case home,cart,profile
+    case home, cart, profile
 }
 
 struct MyCustomTabView: View {

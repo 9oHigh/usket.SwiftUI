@@ -99,7 +99,8 @@
 				4CA7CB7E26CBCD5A00C28963 /* MyWebView.swift */,
 				4CA7CB8026CBD68100C28963 /* MyLinkView.swift */,
 			);
-			path = "Swift-WebView";
+			name = "Swift-WebView";
+			path = "SwiftUI-WebView";
 			sourceTree = "<group>";
 		};
 		4CA7CB5926CBBF2A00C28963 /* Preview Content */ = {

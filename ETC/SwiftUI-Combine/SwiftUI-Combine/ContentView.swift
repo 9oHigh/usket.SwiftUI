@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var randomUserViewModel = RandomUserViewModel()
+    @ObservedObject var randomUserViewModel = RandomUserViewModel()
     
     var body: some View {
         List(randomUserViewModel.randomUsers) { randomUser in
             RandomUserRowView(randomUser: randomUser)
+        }
+        .refreshable {
+            randomUserViewModel.fetchRandomUsers()
         }
     }
 }

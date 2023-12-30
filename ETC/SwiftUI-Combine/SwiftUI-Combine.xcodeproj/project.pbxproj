@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7F003A2B3FD772001C8054 /* RandomUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7F00392B3FD772001C8054 /* RandomUserRouter.swift */; };
 		4C7FFFBB2B3BCCA7001C8054 /* SwiftUI_combineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FFFBA2B3BCCA7001C8054 /* SwiftUI_combineApp.swift */; };
 		4C7FFFBF2B3BCCA8001C8054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7FFFBE2B3BCCA8001C8054 /* Assets.xcassets */; };
 		4C7FFFC22B3BCCA8001C8054 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7FFFC12B3BCCA8001C8054 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7F00392B3FD772001C8054 /* RandomUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRouter.swift; sourceTree = "<group>"; };
 		4C7FFFB72B3BCCA7001C8054 /* SwiftUI-combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7FFFBA2B3BCCA7001C8054 /* SwiftUI_combineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_combineApp.swift; sourceTree = "<group>"; };
 		4C7FFFBC2B3BCCA7001C8054 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C7F00382B3FD763001C8054 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4C7F00392B3FD772001C8054 /* RandomUserRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		4C7FFFAE2B3BCCA7001C8054 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 				4C7FFFBC2B3BCCA7001C8054 /* ContentView.swift */,
 				4C7FFFE42B3BD027001C8054 /* UI */,
 				4C7FFFF52B3BD823001C8054 /* Data */,
+				4C7F00382B3FD763001C8054 /* API */,
 				4C7FFFEF2B3BD54E001C8054 /* Application */,
 				4C7FFFC02B3BCCA8001C8054 /* Preview Content */,
 			);
@@ -314,6 +325,7 @@
 				4C7FFFBB2B3BCCA7001C8054 /* SwiftUI_combineApp.swift in Sources */,
 				4C7FFFFA2B3BDD7A001C8054 /* RandomUserViewModel.swift in Sources */,
 				4C7FFFEC2B3BD2F1001C8054 /* ContentView.swift in Sources */,
+				4C7F003A2B3FD772001C8054 /* RandomUserRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

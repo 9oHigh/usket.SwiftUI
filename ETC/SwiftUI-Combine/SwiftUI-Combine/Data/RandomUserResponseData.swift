@@ -18,10 +18,14 @@ struct RandomUserResponseData: Codable, CustomStringConvertible {
 }
 
 // MARK: - Info
-struct Info: Codable {
+struct Info: Codable, CustomStringConvertible {
     let seed: String
     let results, page: Int
     let version: String
+    
+    var description: String {
+        return "seed: \(seed), results: \(results)"
+    }
 }
 
 // MARK: - Result
@@ -33,6 +37,12 @@ struct RandomUser: Codable, Identifiable {
     private enum CodingKeys: String, CodingKey {
         case name = "name"
         case picture = "picture"
+    }
+}
+
+extension RandomUser: Equatable {
+    static func == (lhs: RandomUser, rhs: RandomUser) -> Bool {
+        return lhs.id == rhs.id
     }
 }
 

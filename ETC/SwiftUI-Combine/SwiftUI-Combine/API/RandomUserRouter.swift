@@ -21,9 +21,8 @@ enum RandomUserRouter: URLRequestConvertible {
     
     var endPoint : String {
         switch self {
-        case .getUsers(let page, let results):
+        case .getUsers:
             return ""
-            // "?page=\(page)&results=\(results)"
         }
     }
     

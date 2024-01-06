@@ -9,9 +9,13 @@ import SwiftUI
 
 struct RegisterView: View {
     
+    @EnvironmentObject var userViewModel: UserViewModel
+    @Environment(\.dismiss) var dismiss
+    
     @State var nameInput: String = ""
     @State var emailInput: String = ""
     @State var passwordInput: String = ""
+    @State private var shouldShowAlert: Bool = false
     
     var body: some View {
         VStack {
@@ -46,10 +50,19 @@ struct RegisterView: View {
                 
                 Button {
                     print("회원가입 버튼 클릭")
+                    userViewModel.register(name: nameInput, email: emailInput, password: passwordInput)
                 } label: {
                     Text("회원가입 하기")
                 }
-
+            }
+            .onReceive(userViewModel.registrationSuccess, perform: { _ in
+                print("registerview - registrationSuccess() called")
+                self.shouldShowAlert = true
+            })
+            .alert("회원가입이 완료되었습니다.", isPresented: $shouldShowAlert) {
+                Button("확인", role: .cancel) {
+                    self.dismiss()
+                }
             }
         }.navigationTitle("회원가입 하기")
     }

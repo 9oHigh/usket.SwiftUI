@@ -8,8 +8,8 @@
 import Foundation
 
 struct TokenData: Codable {
-    let tokenType: String
-    let expiresIn: Int
+    let tokenType: String = ""
+    let expiresIn: Int = 0
     let accessToken, refreshToken: String
     
     enum CodingKeys: String, CodingKey {

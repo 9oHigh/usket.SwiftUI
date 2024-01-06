@@ -11,8 +11,8 @@ struct AuthResponse: Codable {
     var user: UserData
     var token: TokenData
     
-    private enum CodingKeys: String, CodingKey {
-        case token = "token"
+    enum CodingKeys: String, CodingKey { // 순서대로 입력해줘야함
         case user = "user"
+        case token = "token"
     }
 }

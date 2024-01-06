@@ -28,6 +28,11 @@
 		4CBA8CE22B46684500B79E55 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8CE12B46684500B79E55 /* UserData.swift */; };
 		4CBA8CE52B46766500B79E55 /* OtherUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8CE42B46766500B79E55 /* OtherUserProfileView.swift */; };
 		4CBA8CE72B46775000B79E55 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8CE62B46775000B79E55 /* UserListView.swift */; };
+		4CBC78C92B499125000A90CA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78C82B499125000A90CA /* UserViewModel.swift */; };
+		4CBC78CC2B499A60000A90CA /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78CB2B499A60000A90CA /* UserDefaultsManager.swift */; };
+		4CBC78CE2B499C7B000A90CA /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78CD2B499C7B000A90CA /* UserRouter.swift */; };
+		4CBC78D02B499D28000A90CA /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78CF2B499D28000A90CA /* UserAPIService.swift */; };
+		4CBC78D22B499D9A000A90CA /* CurrentUserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		4CBA8CE32B46742C00B79E55 /* SwiftUI-SignUp-SignIn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-SignUp-SignIn-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4CBA8CE42B46766500B79E55 /* OtherUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileView.swift; sourceTree = "<group>"; };
 		4CBA8CE62B46775000B79E55 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		4CBC78C82B499125000A90CA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4CBC78CB2B499A60000A90CA /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		4CBC78CD2B499C7B000A90CA /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		4CBC78CF2B499D28000A90CA /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
+		4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserInfoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4C4C922B47F0B600150FF3 /* AuthRouter.swift */,
+				4CBC78CD2B499C7B000A90CA /* UserRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4C4C952B47F50900150FF3 /* AuthAPIService.swift */,
+				4CBC78CF2B499D28000A90CA /* UserAPIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -164,7 +176,9 @@
 				4C7F01A72B450D21001C8054 /* SwiftUI_SignUp_SignInApp.swift */,
 				4CBA8CD92B4663DA00B79E55 /* View */,
 				4CBA8CE02B46683200B79E55 /* Model */,
+				4CBC78C72B499116000A90CA /* ViewModel */,
 				4C4C4C892B47EDDB00150FF3 /* API */,
+				4CBC78CA2B499A4A000A90CA /* Manager */,
 				4C7F01AD2B450D23001C8054 /* Preview Content */,
 			);
 			path = "SwiftUI-SignUp,SignIn";
@@ -214,8 +228,25 @@
 				4CBA8CE12B46684500B79E55 /* UserData.swift */,
 				4C4C4C972B47F6A800150FF3 /* TokenData.swift */,
 				4C4C4C992B47F7C200150FF3 /* AuthResponse.swift */,
+				4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4CBC78C72B499116000A90CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC78C82B499125000A90CA /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CBC78CA2B499A4A000A90CA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC78CB2B499A60000A90CA /* UserDefaultsManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBC78D02B499D28000A90CA /* UserAPIService.swift in Sources */,
 				4C4C4C962B47F50900150FF3 /* AuthAPIService.swift in Sources */,
 				4C4C4C932B47F0B600150FF3 /* AuthRouter.swift in Sources */,
+				4CBC78CC2B499A60000A90CA /* UserDefaultsManager.swift in Sources */,
 				4CBA8CE52B46766500B79E55 /* OtherUserProfileView.swift in Sources */,
 				4CBA8CE22B46684500B79E55 /* UserData.swift in Sources */,
 				4CBA8CDB2B4663E900B79E55 /* LoginView.swift in Sources */,
@@ -363,10 +396,13 @@
 				4CBA8CE72B46775000B79E55 /* UserListView.swift in Sources */,
 				4CBA8CDD2B46655300B79E55 /* RegisterView.swift in Sources */,
 				4CBA8CDF2B46675000B79E55 /* ProfileView.swift in Sources */,
+				4CBC78C92B499125000A90CA /* UserViewModel.swift in Sources */,
 				4C4C4C8F2B47EEA800150FF3 /* BaseInterceptor.swift in Sources */,
 				4C7F01AA2B450D21001C8054 /* ContentView.swift in Sources */,
+				4CBC78CE2B499C7B000A90CA /* UserRouter.swift in Sources */,
 				4C4C4C982B47F6A800150FF3 /* TokenData.swift in Sources */,
 				4C7F01A82B450D21001C8054 /* SwiftUI_SignUp_SignInApp.swift in Sources */,
+				4CBC78D22B499D9A000A90CA /* CurrentUserInfoResponse.swift in Sources */,
 				4C4C4C9A2B47F7C200150FF3 /* AuthResponse.swift in Sources */,
 				4C4C4C8D2B47EDFB00150FF3 /* APIClient.swift in Sources */,
 			);

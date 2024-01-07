@@ -13,6 +13,7 @@ class UserViewModel: ObservableObject {
     
     var subscription = Set<AnyCancellable>()
     @Published var loggedInUser: UserData? = nil
+    @Published var userList: [UserData] = []
     var registrationSuccess = PassthroughSubject<(), Never>()
     var loginSuccess = PassthroughSubject<(), Never>()
     
@@ -37,7 +38,29 @@ class UserViewModel: ObservableObject {
                 print("userViewModel completion: ", completion)
             } receiveValue: { userData in
                 self.loggedInUser = userData
-                 self.loginSuccess.send()
+                self.loginSuccess.send()
+            }.store(in: &subscription)
+    }
+    
+    // 사용자 정보 가져오기
+    func fetchCurrentUserInfo() {
+        print("userViewModel fetchCurrentUserInfo() called")
+        UserAPIService.fetchCurrentUserInfo()
+            .sink { completion in
+                print("userViewModel completion: ", completion)
+            } receiveValue: { userData in
+                self.loggedInUser = userData
+            }.store(in: &subscription)
+    }
+    
+    // 사용자 리스트 가져오기
+    func fetchUserList() {
+        print("userViewModel fetchCurrentUserInfo() called")
+        UserAPIService.fetchUsers()
+            .sink { completion in
+                print("userViewModel completion: ", completion)
+            } receiveValue: { userDatas in
+                self.userList = userDatas
             }.store(in: &subscription)
     }
 }

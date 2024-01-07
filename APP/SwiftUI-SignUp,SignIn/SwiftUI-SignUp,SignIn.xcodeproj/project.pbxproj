@@ -33,6 +33,10 @@
 		4CBC78CE2B499C7B000A90CA /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78CD2B499C7B000A90CA /* UserRouter.swift */; };
 		4CBC78D02B499D28000A90CA /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78CF2B499D28000A90CA /* UserAPIService.swift */; };
 		4CBC78D22B499D9A000A90CA /* CurrentUserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */; };
+		4CBC78D52B4A7567000A90CA /* OAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78D42B4A7567000A90CA /* OAuthCredential.swift */; };
+		4CBC78D72B4A75DA000A90CA /* OAuthAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78D62B4A75DA000A90CA /* OAuthAuthenticatior.swift */; };
+		4CBC78D92B4A7742000A90CA /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78D82B4A7742000A90CA /* TokenResponse.swift */; };
+		4CBC78DB2B4A7BE4000A90CA /* UserListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC78DA2B4A7BE4000A90CA /* UserListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,10 @@
 		4CBC78CD2B499C7B000A90CA /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		4CBC78CF2B499D28000A90CA /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
 		4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserInfoResponse.swift; sourceTree = "<group>"; };
+		4CBC78D42B4A7567000A90CA /* OAuthCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthCredential.swift; sourceTree = "<group>"; };
+		4CBC78D62B4A75DA000A90CA /* OAuthAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticatior.swift; sourceTree = "<group>"; };
+		4CBC78D82B4A7742000A90CA /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		4CBC78DA2B4A7BE4000A90CA /* UserListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		4C4C4C892B47EDDB00150FF3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4CBC78D32B4A72E0000A90CA /* OAuth */,
 				4C4C4C942B47F4F500150FF3 /* Service */,
 				4C4C4C8B2B47EDEE00150FF3 /* Interceptor */,
 				4C4C4C8A2B47EDEB00150FF3 /* Router */,
@@ -229,6 +238,8 @@
 				4C4C4C972B47F6A800150FF3 /* TokenData.swift */,
 				4C4C4C992B47F7C200150FF3 /* AuthResponse.swift */,
 				4CBC78D12B499D9A000A90CA /* CurrentUserInfoResponse.swift */,
+				4CBC78D82B4A7742000A90CA /* TokenResponse.swift */,
+				4CBC78DA2B4A7BE4000A90CA /* UserListResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +258,15 @@
 				4CBC78CB2B499A60000A90CA /* UserDefaultsManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		4CBC78D32B4A72E0000A90CA /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC78D42B4A7567000A90CA /* OAuthCredential.swift */,
+				4CBC78D62B4A75DA000A90CA /* OAuthAuthenticatior.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,17 +414,21 @@
 				4CBA8CDB2B4663E900B79E55 /* LoginView.swift in Sources */,
 				4C4C4C912B47EF9D00150FF3 /* APILogger.swift in Sources */,
 				4CBA8CE72B46775000B79E55 /* UserListView.swift in Sources */,
+				4CBC78D72B4A75DA000A90CA /* OAuthAuthenticatior.swift in Sources */,
 				4CBA8CDD2B46655300B79E55 /* RegisterView.swift in Sources */,
 				4CBA8CDF2B46675000B79E55 /* ProfileView.swift in Sources */,
 				4CBC78C92B499125000A90CA /* UserViewModel.swift in Sources */,
 				4C4C4C8F2B47EEA800150FF3 /* BaseInterceptor.swift in Sources */,
 				4C7F01AA2B450D21001C8054 /* ContentView.swift in Sources */,
+				4CBC78D52B4A7567000A90CA /* OAuthCredential.swift in Sources */,
 				4CBC78CE2B499C7B000A90CA /* UserRouter.swift in Sources */,
 				4C4C4C982B47F6A800150FF3 /* TokenData.swift in Sources */,
 				4C7F01A82B450D21001C8054 /* SwiftUI_SignUp_SignInApp.swift in Sources */,
 				4CBC78D22B499D9A000A90CA /* CurrentUserInfoResponse.swift in Sources */,
 				4C4C4C9A2B47F7C200150FF3 /* AuthResponse.swift in Sources */,
 				4C4C4C8D2B47EDFB00150FF3 /* APIClient.swift in Sources */,
+				4CBC78D92B4A7742000A90CA /* TokenResponse.swift in Sources */,
+				4CBC78DB2B4A7BE4000A90CA /* UserListResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct UserListView: View {
     
-    @State var users: [UserData] = [UserData(id: 0, name: "호호호", email: "adsf@asdf", avatar: "https://www.gravatar.com/avatar/54498b4571f8d9eb48736a69019391f9.jpg?s=200&d=robohash"), UserData(id: 1, name: "키키키", email: "adsf@asdf", avatar: "https://www.gravatar.com/avatar/54498b4571f8d9eb48736a69019391f9.jpg?s=200&d=robohash"), UserData(id: 2, name: "빠빠빠", email: "adsf@asdf", avatar: "https://www.gravatar.com/avatar/54498b4571f8d9eb48736a69019391f9.jpg?s=200&d=robohash")]
+    @EnvironmentObject var userViewModel: UserViewModel
+    @State var users: [UserData] = []
     @State var emailInput: String = ""
     @State var passwordInput: String = ""
     
@@ -51,9 +52,10 @@ struct UserListView: View {
                     Spacer()
                 }
             }
-
         }
         .navigationTitle("사용자 목록")
+        .onAppear(perform: { userViewModel.fetchUserList() })
+        .onReceive(userViewModel.$userList) { self.users = $0 }
     }
 }
 

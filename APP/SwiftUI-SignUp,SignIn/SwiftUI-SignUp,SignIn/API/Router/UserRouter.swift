@@ -33,6 +33,8 @@ enum UserRouter: URLRequestConvertible {
         switch self {
         default:
             var parm = Parameters()
+            let tokenData = UserDefaultsManager.shared.getTokens()
+            parm["refresh_token"] = tokenData.refreshToken
             return parm
         }
     }

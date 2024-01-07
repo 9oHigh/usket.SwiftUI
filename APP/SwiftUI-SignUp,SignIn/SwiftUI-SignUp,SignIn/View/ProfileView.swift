@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @EnvironmentObject var userViewModel: UserViewModel
+    
     @State var id: String = ""
     @State var name: String = ""
     @State var email: String = ""
@@ -64,9 +66,20 @@ struct ProfileView: View {
                 
                 Button {
                     print("새로고침 버튼 클릭")
+                    userViewModel.fetchCurrentUserInfo()
                 } label: {
                     Text("새로고침")
                 }
+            }
+            .onAppear {
+                userViewModel.fetchCurrentUserInfo()
+            }
+            .onReceive(userViewModel.$loggedInUser) { loggedInUser in
+                guard let user = loggedInUser else { return }
+                self.id = "\(user.id)"
+                self.avatarImage = user.avatar
+                self.name = user.name
+                self.email = user.email
             }
         }
         .navigationTitle("내 프로필")

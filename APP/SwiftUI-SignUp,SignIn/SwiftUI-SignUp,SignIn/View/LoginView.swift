@@ -21,21 +21,14 @@ struct LoginView: View {
             Form {
                 Section {
                     TextField("이메일", text: $emailInput)
-                    TextField("비밀번호", text: $passwordInput)
-                } header: {
-                    Text("로그인 정보")
-                }
-                
-                Section {
-                    TextField("이메일", text: $emailInput)
                         .keyboardType(.emailAddress)
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.never)
                     
-                    SecureField("비밀번호", text: $passwordInput)
+                    TextField("비밀번호", text: $passwordInput)
                         .keyboardType(.default)
                 } header: {
-                   Text("로그인 정보")
+                    Text("로그인 정보")
                 }
                 
                 Button {
@@ -52,7 +45,7 @@ struct LoginView: View {
             .alert("로그인이 완료되었습니다.", isPresented: $shouldShowAlert) {
                 Button("확인", role: .cancel) {
                     self.dismiss()
-                }
+                } 
             }
         }.navigationTitle("로그인 하기")
     }

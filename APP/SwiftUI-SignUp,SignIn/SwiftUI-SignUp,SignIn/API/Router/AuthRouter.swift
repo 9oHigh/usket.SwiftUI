@@ -49,7 +49,6 @@ enum AuthRouter: URLRequestConvertible {
             return parm
         case .tokenRefresh:
             var parm = Parameters()
-            // parm["refresh_token"] = " "
             return parm
         }
     }

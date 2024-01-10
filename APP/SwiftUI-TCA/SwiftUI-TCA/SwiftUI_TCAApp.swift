@@ -12,10 +12,17 @@ import ComposableArchitecture
 struct SwiftUI_TCAApp: App {
     var body: some Scene {
         WindowGroup {
+            /*
             CounterView(
                 counterStore: Store(initialState: Counter.State()) {
                     Counter()
                 }
+            )
+             */
+            AppView(
+              store: Store(initialState: Todos.State()) {
+                Todos()._printChanges()
+              }
             )
         }
     }

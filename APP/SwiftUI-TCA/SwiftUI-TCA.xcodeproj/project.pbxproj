@@ -12,6 +12,8 @@
 		4CE246FB2B4A839600FD12A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE246FA2B4A839600FD12A8 /* Assets.xcassets */; };
 		4CE246FE2B4A839600FD12A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE246FD2B4A839600FD12A8 /* Preview Assets.xcassets */; };
 		4CE2471C2B4BEF3500FD12A8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4CE2471B2B4BEF3500FD12A8 /* ComposableArchitecture */; };
+		4CE247332B4D24FA00FD12A8 /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE247322B4D24FA00FD12A8 /* Todos.swift */; };
+		4CE247352B4D250F00FD12A8 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE247342B4D250E00FD12A8 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		4CE246F82B4A839500FD12A8 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		4CE246FA2B4A839600FD12A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CE246FD2B4A839600FD12A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CE247312B4D215000FD12A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4CE247322B4D24FA00FD12A8 /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
+		4CE247342B4D250E00FD12A8 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		4CE246F52B4A839500FD12A8 /* SwiftUI-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				4CE247312B4D215000FD12A8 /* Info.plist */,
 				4CE246F62B4A839500FD12A8 /* SwiftUI_TCAApp.swift */,
 				4CE2471D2B4BF5BF00FD12A8 /* CounterApp */,
 				4CE2471E2B4BF5CB00FD12A8 /* TodoApp */,
@@ -81,6 +87,8 @@
 		4CE2471E2B4BF5CB00FD12A8 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CE247342B4D250E00FD12A8 /* Todo.swift */,
+				4CE247322B4D24FA00FD12A8 /* Todos.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -163,6 +171,8 @@
 			files = (
 				4CE246F92B4A839500FD12A8 /* CounterView.swift in Sources */,
 				4CE246F72B4A839500FD12A8 /* SwiftUI_TCAApp.swift in Sources */,
+				4CE247332B4D24FA00FD12A8 /* Todos.swift in Sources */,
+				4CE247352B4D250F00FD12A8 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +309,7 @@
 				DEVELOPMENT_TEAM = 46QF7GBZH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-TCA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +339,7 @@
 				DEVELOPMENT_TEAM = 46QF7GBZH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-TCA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

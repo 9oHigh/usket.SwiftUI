@@ -18,12 +18,17 @@ struct SwiftUI_TCAApp: App {
                     Counter()
                 }
             )
+             
+             AppView(
+               store: Store(initialState: Todos.State()) {
+                 Todos()._printChanges()
+               }
+             )
              */
-            AppView(
-              store: Store(initialState: Todos.State()) {
-                Todos()._printChanges()
-              }
-            )
+            
+            MemosView(store: Store(initialState: Memos.State(), reducer: {
+                Memos()
+            }))
         }
     }
 }

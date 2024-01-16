@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCA63DE2B56713B0098486D /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63DD2B56713B0098486D /* Memo.swift */; };
+		4CCA63E02B5671880098486D /* Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63DF2B5671880098486D /* Memos.swift */; };
+		4CCA63E22B56749C0098486D /* MemosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63E12B56749C0098486D /* MemosView.swift */; };
+		4CCA63E52B5679760098486D /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63E42B5679760098486D /* MemoView.swift */; };
+		4CCA63E92B567A1B0098486D /* MemoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63E82B567A1B0098486D /* MemoEditor.swift */; };
+		4CCA63EC2B56C7570098486D /* NavigationBar+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63EB2B56C7570098486D /* NavigationBar+Modifier.swift */; };
+		4CCA63EE2B56CA9A0098486D /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63ED2B56CA9A0098486D /* BottomSheet.swift */; };
+		4CCA63F32B56F5C20098486D /* BottomSheetMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63F22B56F5C20098486D /* BottomSheetMessageView.swift */; };
+		4CCA63F52B56F5D40098486D /* BottomSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63F42B56F5D40098486D /* BottomSheetType.swift */; };
+		4CCA63F72B56F5FE0098486D /* RoundedCorner+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA63F62B56F5FE0098486D /* RoundedCorner+Modifier.swift */; };
 		4CE246F72B4A839500FD12A8 /* SwiftUI_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE246F62B4A839500FD12A8 /* SwiftUI_TCAApp.swift */; };
 		4CE246F92B4A839500FD12A8 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE246F82B4A839500FD12A8 /* CounterView.swift */; };
 		4CE246FB2B4A839600FD12A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE246FA2B4A839600FD12A8 /* Assets.xcassets */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CCA63DD2B56713B0098486D /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		4CCA63DF2B5671880098486D /* Memos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memos.swift; sourceTree = "<group>"; };
+		4CCA63E12B56749C0098486D /* MemosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosView.swift; sourceTree = "<group>"; };
+		4CCA63E42B5679760098486D /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		4CCA63E82B567A1B0098486D /* MemoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditor.swift; sourceTree = "<group>"; };
+		4CCA63EB2B56C7570098486D /* NavigationBar+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationBar+Modifier.swift"; sourceTree = "<group>"; };
+		4CCA63ED2B56CA9A0098486D /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		4CCA63F22B56F5C20098486D /* BottomSheetMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetMessageView.swift; sourceTree = "<group>"; };
+		4CCA63F42B56F5D40098486D /* BottomSheetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetType.swift; sourceTree = "<group>"; };
+		4CCA63F62B56F5FE0098486D /* RoundedCorner+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner+Modifier.swift"; sourceTree = "<group>"; };
 		4CE246F32B4A839500FD12A8 /* SwiftUI-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE246F62B4A839500FD12A8 /* SwiftUI_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TCAApp.swift; sourceTree = "<group>"; };
 		4CE246F82B4A839500FD12A8 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
@@ -39,6 +59,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2D8E282B4FC011003B658A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63F62B56F5FE0098486D /* RoundedCorner+Modifier.swift */,
+				4CCA63F12B56F5890098486D /* BottomSheet */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4C9718332B4EF4140026FCF5 /* MemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63E32B56796E0098486D /* Memo */,
+				4CCA63E62B5679930098486D /* Memos */,
+				4CCA63E72B567A0C0098486D /* MemoEditor */,
+				4CCA63EA2B56C7460098486D /* Modifiers */,
+			);
+			path = MemoApp;
+			sourceTree = "<group>";
+		};
+		4CCA63E32B56796E0098486D /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63DD2B56713B0098486D /* Memo.swift */,
+				4CCA63E42B5679760098486D /* MemoView.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		4CCA63E62B5679930098486D /* Memos */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63DF2B5671880098486D /* Memos.swift */,
+				4CCA63E12B56749C0098486D /* MemosView.swift */,
+			);
+			path = Memos;
+			sourceTree = "<group>";
+		};
+		4CCA63E72B567A0C0098486D /* MemoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63E82B567A1B0098486D /* MemoEditor.swift */,
+			);
+			path = MemoEditor;
+			sourceTree = "<group>";
+		};
+		4CCA63EA2B56C7460098486D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63EB2B56C7570098486D /* NavigationBar+Modifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4CCA63F12B56F5890098486D /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA63ED2B56CA9A0098486D /* BottomSheet.swift */,
+				4CCA63F22B56F5C20098486D /* BottomSheetMessageView.swift */,
+				4CCA63F42B56F5D40098486D /* BottomSheetType.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
 		4CE246EA2B4A839500FD12A8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +142,13 @@
 		4CE246F52B4A839500FD12A8 /* SwiftUI-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				4CE246FA2B4A839600FD12A8 /* Assets.xcassets */,
 				4CE247312B4D215000FD12A8 /* Info.plist */,
 				4CE246F62B4A839500FD12A8 /* SwiftUI_TCAApp.swift */,
 				4CE2471D2B4BF5BF00FD12A8 /* CounterApp */,
 				4CE2471E2B4BF5CB00FD12A8 /* TodoApp */,
-				4CE246FA2B4A839600FD12A8 /* Assets.xcassets */,
+				4C9718332B4EF4140026FCF5 /* MemoApp */,
+				4C2D8E282B4FC011003B658A /* Helpers */,
 				4CE246FC2B4A839600FD12A8 /* Preview Content */,
 			);
 			path = "SwiftUI-TCA";
@@ -169,10 +255,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCA63EE2B56CA9A0098486D /* BottomSheet.swift in Sources */,
+				4CCA63E52B5679760098486D /* MemoView.swift in Sources */,
+				4CCA63DE2B56713B0098486D /* Memo.swift in Sources */,
+				4CCA63E22B56749C0098486D /* MemosView.swift in Sources */,
 				4CE246F92B4A839500FD12A8 /* CounterView.swift in Sources */,
+				4CCA63F52B56F5D40098486D /* BottomSheetType.swift in Sources */,
+				4CCA63F32B56F5C20098486D /* BottomSheetMessageView.swift in Sources */,
 				4CE246F72B4A839500FD12A8 /* SwiftUI_TCAApp.swift in Sources */,
 				4CE247332B4D24FA00FD12A8 /* Todos.swift in Sources */,
 				4CE247352B4D250F00FD12A8 /* Todo.swift in Sources */,
+				4CCA63E02B5671880098486D /* Memos.swift in Sources */,
+				4CCA63EC2B56C7570098486D /* NavigationBar+Modifier.swift in Sources */,
+				4CCA63E92B567A1B0098486D /* MemoEditor.swift in Sources */,
+				4CCA63F72B56F5FE0098486D /* RoundedCorner+Modifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,6 @@ struct Todo {
     
     var body: some Reducer<State, Action> {
         BindingReducer()
-
     }
 }
 
@@ -31,8 +30,7 @@ struct TodoView: View {
     let store: StoreOf<Todo>
     
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) {
-            viewStore in
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
             HStack {
                 Button {
                     viewStore.$isCompleted.wrappedValue.toggle()
@@ -46,10 +44,4 @@ struct TodoView: View {
             .foregroundStyle(viewStore.isCompleted ? .gray : .black)
         }
     }
-}
-
-#Preview {
-    TodoView(store: .init(initialState: Todo.State(id: UUID()), reducer: {
-        Todo()
-    }))
 }

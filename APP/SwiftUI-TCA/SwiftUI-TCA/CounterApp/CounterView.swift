@@ -50,9 +50,3 @@ struct CounterView: View {
         }
     }
 }
-
-#Preview {
-    CounterView(counterStore: Store(initialState: Counter.State()) {
-        Counter()
-    })
-}

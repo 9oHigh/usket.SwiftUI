@@ -22,6 +22,7 @@ struct BottomSheet: View {
                 
                 BottomSheetMessageView(bottomSheetType: $bottomSheetType)
                     .setRoundedCorner(radius: 12)
+                    .transition(.move(edge: .bottom))
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
